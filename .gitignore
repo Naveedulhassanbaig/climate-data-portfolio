@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.env
+# *.csv  # keep the dataset for deployment
+.DS_Store
