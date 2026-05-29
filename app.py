@@ -45,7 +45,7 @@ world_df     = df[df["country"] == "World"].copy()
 
 with st.sidebar:
     st.markdown("## Navigation")
-    page = st.radio("", [
+    page = st.radio("Navigation", [
         "About Me",
         "Global CO2 Trend",
         "Top Emitters",
