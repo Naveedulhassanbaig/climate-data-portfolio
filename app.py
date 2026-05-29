@@ -48,9 +48,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ─── Load Data ───────────────────────────────────────────────────────────────
+DATA_URL = "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"
+
 @st.cache_data
 def load_data():
-    df = pd.read_csv("owid-co2-data.csv")
+    df = pd.read_csv(DATA_URL)
     return df
 
 df = load_data()
